@@ -1,0 +1,25 @@
+{
+  "name": "class-validator-helper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "tsc --build && node lib/test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/super2god/class-validator-helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/super2god/class-validator-helper/issues"
+  },
+  "homepage": "https://github.com/super2god/class-validator-helper#readme",
+  "devDependencies": {
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "typescript": "^4.3.5",
+    "reflect-metadata": "^0.1.13"
+  }
+}
