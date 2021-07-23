@@ -28,23 +28,23 @@ class CreateUserBody$Address {
 }
 
 class CreateUserBody {
-  @IsString()
   @IsNotEmpty()
-  name: string;
-
-  @IsNotEmpty()
-  @ValidateNested()
+  @ValidateNested({ each: true })
   @Type(() => CreateUserBody$Address)
-  address: CreateUserBody$Address;
+  addresses: CreateUserBody$Address[];
 }
 
 const body = {
-  name: 'Reid',
-  address: {
+  addresses: [{
     province: '广东省',
     city: '广州市',
+    area: '越秀区',
     detail: '开心花园'
-  }
+  }, {
+    province: '广东省',
+    city: '揭阳市',
+    detail: '开心农场'
+  }]
 };
 
 
